@@ -1,18 +1,17 @@
 package com.khorn.terraincontrol.bukkit;
 
-import java.util.List;
-import java.util.Random;
-
-import net.minecraft.server.v1_4_6.BiomeBase;
-import net.minecraft.server.v1_4_6.BiomeCache;
-import net.minecraft.server.v1_4_6.ChunkPosition;
-import net.minecraft.server.v1_4_6.WorldChunkManager;
-
 import com.khorn.terraincontrol.DefaultBiome;
 import com.khorn.terraincontrol.IBiomeManager;
 import com.khorn.terraincontrol.LocalWorld;
 import com.khorn.terraincontrol.biomelayers.layers.Layer;
 import com.khorn.terraincontrol.configuration.WorldConfig;
+import net.minecraft.server.v1_4_R1.BiomeBase;
+import net.minecraft.server.v1_4_R1.BiomeCache;
+import net.minecraft.server.v1_4_R1.ChunkPosition;
+import net.minecraft.server.v1_4_R1.WorldChunkManager;
+
+import java.util.List;
+import java.util.Random;
 
 public class TCWorldChunkManager extends WorldChunkManager implements IBiomeManager
 {

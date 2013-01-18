@@ -1,17 +1,16 @@
 package com.khorn.terraincontrol.bukkit;
 
+import com.khorn.terraincontrol.DefaultMobType;
+import com.khorn.terraincontrol.configuration.WeightedMobSpawnGroup;
+import com.khorn.terraincontrol.util.Txt;
+import net.minecraft.server.v1_4_R1.BiomeBase;
+import net.minecraft.server.v1_4_R1.BiomeMeta;
+import net.minecraft.server.v1_4_R1.EntityTypes;
+
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import net.minecraft.server.v1_4_6.BiomeBase;
-import net.minecraft.server.v1_4_6.BiomeMeta;
-import net.minecraft.server.v1_4_6.EntityTypes;
-
-import com.khorn.terraincontrol.DefaultMobType;
-import com.khorn.terraincontrol.configuration.WeightedMobSpawnGroup;
-import com.khorn.terraincontrol.util.Txt;
 
 /**
  * This static utility is for obfuscation mappings.

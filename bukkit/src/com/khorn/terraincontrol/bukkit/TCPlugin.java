@@ -1,22 +1,5 @@
 package com.khorn.terraincontrol.bukkit;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.UUID;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import net.minecraft.server.v1_4_6.BiomeBase;
-
-import org.bukkit.Bukkit;
-import org.bukkit.World;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.craftbukkit.v1_4_6.CraftWorld;
-import org.bukkit.craftbukkit.v1_4_6.block.CraftBlock;
-import org.bukkit.generator.ChunkGenerator;
-import org.bukkit.plugin.java.JavaPlugin;
-
 import com.khorn.terraincontrol.LocalWorld;
 import com.khorn.terraincontrol.TerrainControl;
 import com.khorn.terraincontrol.TerrainControlEngine;
@@ -25,6 +8,21 @@ import com.khorn.terraincontrol.configuration.TCDefaultValues;
 import com.khorn.terraincontrol.configuration.WorldConfig;
 import com.khorn.terraincontrol.customobjects.ObjectsStore;
 import com.khorn.terraincontrol.util.Txt;
+import net.minecraft.server.v1_4_R1.BiomeBase;
+import org.bukkit.Bukkit;
+import org.bukkit.World;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.craftbukkit.v1_4_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_4_R1.block.CraftBlock;
+import org.bukkit.generator.ChunkGenerator;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.UUID;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TCPlugin extends JavaPlugin implements TerrainControlEngine
 {
@@ -143,7 +141,7 @@ public class TCPlugin extends JavaPlugin implements TerrainControlEngine
         {
             BukkitWorld bukkitWorld = this.NotInitedWorlds.remove(world.getName());
 
-            net.minecraft.server.v1_4_6.World workWorld = ((CraftWorld) world).getHandle();
+            net.minecraft.server.v1_4_R1.World workWorld = ((CraftWorld) world).getHandle();
 
             bukkitWorld.Init(workWorld);
 

@@ -1,7 +1,7 @@
 package com.khorn.terraincontrol.bukkit.commands;
 
-import java.util.List;
-
+import com.khorn.terraincontrol.bukkit.BukkitWorld;
+import com.khorn.terraincontrol.bukkit.TCPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
@@ -10,8 +10,7 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.Permission;
 
-import com.khorn.terraincontrol.bukkit.BukkitWorld;
-import com.khorn.terraincontrol.bukkit.TCPlugin;
+import java.util.List;
 
 public abstract class BaseCommand
 {

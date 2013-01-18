@@ -1,14 +1,13 @@
 package com.khorn.terraincontrol.bukkit;
 
 
-import java.util.Random;
-
+import com.khorn.terraincontrol.generator.ObjectSpawner;
 import org.bukkit.Chunk;
 import org.bukkit.World;
-import org.bukkit.craftbukkit.v1_4_6.CraftChunk;
+import org.bukkit.craftbukkit.v1_4_R1.CraftChunk;
 import org.bukkit.generator.BlockPopulator;
 
-import com.khorn.terraincontrol.generator.ObjectSpawner;
+import java.util.Random;
 
 public class TCBlockPopulator extends BlockPopulator
 {
